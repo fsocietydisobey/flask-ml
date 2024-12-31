@@ -54,7 +54,7 @@ def create_student():
 
 # Delete record
 @example_blueprint.route("/<int:id>", methods=["DELETE"])
-def get_student(id):
+def delete_student(id):
     student = Student.query.get(id)
 
     if student is None:
